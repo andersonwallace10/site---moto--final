@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="moto.css">
+    <link rel="shortcut icon" href="icone moto/favicon.ico" type="image/x-icon"/>
+    <style>
+        body {
+            background-color: #fe9600;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            box-sizing: border-box;
+        }
+    
+        header {
+            background: linear-gradient(135deg, #fe9600, #ff6f00);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #2600ff; /* Azul #2600ff */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 10;
+        }
+    
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    
+        .logo img {
+            height: 60px;
+            margin-right: 10px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    
+        .logo h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    
+        nav {
+            background-color: #2600ff; /* Azul #2600ff */
+            color: #ffffff;
+            padding: 10px 0;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+    
+        nav ul li {
+            margin: 0 20px;
+        }
+    
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+    
+        nav ul li a:hover {
+            color: #ff6f00;
+        }
+    
+        main {
+            background-color: #ffffff;
+            padding: 2em;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .center {
+            display: block;
+            margin: 20px auto; /* Ajustado o espaçamento para melhorar a visualização */
+            width: 100%;
+            max-width: 80%; 
+            height: auto; 
+        }
+    
+        footer {
+            background-color: #494646;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+    
+        h1, h2, h3 {
+            margin: 20px 0;
+            text-align: center;
+        }
+    
+        h1 {
+            font-size: 2.5em;
+            color: #2600ff; 
+        }
+    
+        h2 {
+            font-size: 2em;
+            color: #2600ff; 
+        }
+    
+        h3 {
+            font-size: 1.2em;
+            color: #333;
+        }
+    
+        p {
+            margin: 0 0 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .contingency-message {
+            background-color: #ffff; 
+            color: #2600ff;  
+            border: 2px solid #2600ff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .redirect-button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #2600ff;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .redirect-button:hover {
+            background-color: #1a00cc;
+        }
+    </style>
+</head>
+<body style="background-color:#fe9600;">
+
+    <header>
+        <h1 style="text-align: center;">Galeria de Fotos</h1>
+        
+    <div class="play-music-container">
+            <div class="message">🎵 Escute uma música enquanto vê algumas fotos de motos esportivas!! ( Tate McRae - you broke me first )</div>
+        </div>        
+        
+        <audio controls>
+            <source src="musica/Tate McRae - you broke me first.mp3" type="audio/mp3">
+            <source src="musica/Tate McRae - you broke me first.ogg" type="audio/ogg">
+            <source src="musica/Tate McRae - you broke me first.wav" type="audio/wav">
+        </audio>
+
+        <nav> 
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li> 
+                <li><a href="Galeria de Fotos.html"next>Fotos</a></li>
+                <li><a href="video sobre motos.html"next>Vídeos</a></li>
+                <li><a href="formulario.html"prev>Formulário de Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Yamaha YZF R-3</h1>
+        <img src="https://www.autossegredos.com.br/wp-content/webp-express/webp-images/uploads/2015/08/yamaha-yzf-r3.jpg.webp" alt="Yamaha YZF R-3" class="center">
+     
+        <h1>Kawasaki Ninja 400</h1>
+        <img src="https://cdn-fastly.motorcycle.com/media/2023/03/20/10999432/8-things-i-d-change-on-the-kawasaki-ninja-400.jpg?size=414x575&nocrop=1" alt="Kawasaki Ninja 400" class="center">
+   
+        <h1>Kawasaki Ninja 650 R</h1>
+        <img src="https://s2-autoesporte.glbimg.com/sHYMck51PFhHxWOzuxKOfXbZ6rk=/0x0:4093x3070/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/r/S/yBhxHyR4eVhJcfd6N9Dg/imagem-release-970785.jpg" alt="Kawasaki Ninja 650 R" class="center">
+   
+        <h1>Suzuki GSX-R 1000 R</h1>
+        <img src="https://i.pinimg.com/originals/89/3b/81/893b815d021414831526c7d3d9b506a1.jpg" alt="Suzuki GSX-R 1000 R" class="center">
+   
+        <h1>Kawasaki Ninja ZX 10R</h1>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoyL5d85tVse2eExBZiqi22HGmIibLPH3R-3Hf_3EHpNpvGNbwzKMMYP7zeKGgm7GjnLj4WGEMVaXREn-mcFlmGQ8utCBj8woxwcRk-EpKnzGweeMyMqSnNQ6WiP9QHzfm_UQohlLxJ79-/s1600/Kawasaki+Ninja+ZX_10R+ST_Ambientada+01.JPG" alt="Kawasaki Ninja ZX 10R" class="center">
+   
+        <h1>Suzuki GSX 1300-R Hayabusa</h1>
+        <img src="https://i.pinimg.com/736x/df/0a/28/df0a2846251bda91fd8f61377f0b047f.jpg" alt="Suzuki GSX 1300-R Hayabusa" class="center">
+   
+        <h1>BMW S 1000 R</h1>
+        <img src="https://www.motonline.com.br/noticia/wp-content/uploads/2022/09/BMW-S-1000-RR-2023-1-800x534.jpg" alt="BMW S 1000 R" class="center">
+    </main>
+    
+    <a href="https://www.youtube.com/@siteMOTOcombr" class="redirect-button" >Clique neste link para ver mais videos e informações sobre algumas motos. - https://www.youtube.com/@siteMOTOcombr</a>
+    
+    <footer>
+        <p>© 2024 Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>

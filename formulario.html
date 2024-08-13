@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="moto.css">
+    <link rel="shortcut icon" href="icone moto/favicon.ico" type="image/x-icon"/>
+    <style>
+        .hidden { display: none; }
+
+        body {
+    background-color: #fe9600;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: linear-gradient(135deg, #fe9600, #ff6f00);
+    color: #ffffff;
+    padding: 15px; /* Reduzido */
+    text-align: center;
+    border-bottom: 4px solid #2600ff; /* Reduzido */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduzido */
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    height: 50px; /* Reduzido */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em; /* Reduzido */
+}
+
+nav {
+    background-color: #2600ff;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0; /* Reduzido */
+}
+
+nav ul li {
+    margin: 0 10px; /* Reduzido */
+}
+
+nav ul li a {
+    font-size: 1em; /* Reduzido */
+}
+
+footer {
+    background-color: #494646;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0; /* Reduzido */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.form-container {
+    background: #fff;
+    padding: 15px; /* Reduzido */
+    margin: 15px auto; /* Reduzido */
+    max-width: 500px; /* Reduzido */
+    border-radius: 8px; /* Reduzido */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Reduzido */
+}
+
+.form-section {
+    margin: 10px 0; /* Reduzido */
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 4px; /* Reduzido */
+    font-size: 0.9em; /* Reduzido */
+}
+
+.form-section input,
+.form-section select {
+    width: calc(100% - 16px); /* Reduzido */
+    padding: 10px; /* Reduzido */
+    border: 1px solid #ccc; /* Reduzido */
+    border-radius: 4px; /* Reduzido */
+    box-sizing: border-box;
+    font-size: 0.9em; /* Reduzido */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-section input:focus,
+.form-section select:focus {
+    border-color: #2600ff;
+    box-shadow: 0 0 4px rgba(38, 0, 255, 0.5); /* Reduzido */
+}
+
+button {
+    background-color: #37e00d;
+    color: #020000;
+    border: none;
+    padding: 10px 20px; /* Reduzido */
+    font-size: 0.9em; /* Reduzido */
+    cursor: pointer;
+    border-radius: 4px; /* Reduzido */
+    box-shadow: 0 3px 6px rgba(202, 65, 65, 0.6); /* Reduzido */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e87e00;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="icone moto/favicon.ico" alt="Logo">
+            <h1>Formulário de Cadastro</h1>
+        </div>
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li> 
+            <li><a href="Galeria de Fotos.html"next>Fotos</a></li>
+            <li><a href="video sobre motos.html"next>Vídeos</a></li>
+            <li><a href="formulario.html"prev>Formulário de Contato</a></li>
+        </ul>
+    </nav>
+    <div class="form-container">
+        <form id="registrationForm">
+            <div class="form-section">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-section">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+            </div>
+
+            <div class="form-section">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione um estado</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="es">Espírito Santo</option>
+                </select>
+            </div>
+
+            <div id="cidadeContainer" class="hidden form-section">
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade" required>
+                    <option value="">Selecione uma cidade</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+
+            <div class="form-section">
+                <label for="confirmarSenha">Confirme a Senha:</label>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+            </div>
+
+            <div class="form-section">
+                <label for="gostaDeMoto">Você sempre gostou de moto?</label>
+                <input type="text" id="gostaDeMoto" name="gostaDeMoto" required>
+            </div>
+
+            <div class="form-section">
+                <label for="motoPreferida">Tem alguma moto que mais gosta?</label>
+                <input type="text" id="motoPreferida" name="motoPreferida">
+            </div>
+
+            <div class="form-section">
+                <label for="clubeMoto">Faz parte ou já fez parte de algum clube de moto?</label>
+                <input type="text" id="clubeMoto" name="clubeMoto">
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script>
+        // Função para validar senha
+        function validarSenha(senha) {
+            const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            return regex.test(senha);
+        }
+
+        // Função para validar o formulário
+        function validarFormulario(event) {
+            event.preventDefault();
+            const senha = document.getElementById('senha').value;
+            const confirmarSenha = document.getElementById('confirmarSenha').value;
+            const idade = parseInt(document.getElementById('idade').value, 10);
+            const estado = document.getElementById('estado').value;
+            const cidade = document.getElementById('cidade').value;
+
+            let mensagem = '';
+
+            // Verificar a idade
+            if (idade < 18) {
+                mensagem = 'Você deve ter 18 anos ou mais para se registrar.';
+            } 
+
+            // Verificar estado e cidade
+            else if (!estado) {
+                mensagem = 'Selecione um estado.';
+            } else if (!cidade) {
+                mensagem = 'Selecione uma cidade.';
+            }
+
+            if (mensagem) {
+                alert(mensagem);
+            } else {
+                alert('Formulário enviado com sucesso!');
+                document.getElementById('registrationForm').reset();
+            }
+        }
+
+        // Função para atualizar o campo cidade baseado na seleção do estado
+        function atualizarCidades() {
+            const estado = document.getElementById('estado').value;
+            const cidadeSelect = document.getElementById('cidade');
+            const cidadeContainer = document.getElementById('cidadeContainer');
+
+            cidadeSelect.innerHTML = '<option value="">Selecione uma cidade</option>';
+
+            const cidades = {
+                sp: ['São Paulo', 'Campinas', 'Santos'],
+                rj: ['Rio de Janeiro', 'Niterói', 'Cabo Frio'],
+                mg: ['Belo Horizonte', 'Uberlândia', 'Juiz de Fora'],
+                es: ['Vitória', 'Vila Velha', 'Serra']
+            };
+
+            if (cidades[estado]) {
+                cidades[estado].forEach(cidade => {
+                    const option = document.createElement('option');
+                    option.value = cidade;
+                    option.textContent = cidade;
+                    cidadeSelect.appendChild(option);
+                });
+                cidadeContainer.classList.remove('hidden');
+            } else {
+                cidadeContainer.classList.add('hidden');
+            }
+        }
+
+        // Event Listeners
+        document.getElementById('estado').addEventListener('change', atualizarCidades);
+        document.getElementById('registrationForm').addEventListener('submit', validarFormulario);
+    </script>
+
+    <footer>
+        <p>© 2024 Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
